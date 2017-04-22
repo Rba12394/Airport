@@ -1,8 +1,9 @@
+
 /**
- * Created by Blake on 3/27/2017.
+ * Created by Blake on 2/28/2017.
  */
 
-
+import * as firebase from 'firebase';
 
 import React, { Component } from 'react';
 
@@ -17,6 +18,9 @@ import {
     Alert
 } from 'react-native';
 
+import ActionButton from 'react-native-action-button';
+
+
 
 import { Form,
     Separator,InputField, LinkField,
@@ -24,11 +28,11 @@ import { Form,
 } from 'react-native-form-generator';
 
 const onButtonPress = () => {
-    Alert.alert("NEW USER CREATED");
+    Alert.alert("")
 }
 
 
-export default class dashboard extends Component{
+class dashboard extends Component{
 
 
     render() {
@@ -40,9 +44,14 @@ export default class dashboard extends Component{
 
 
                 <View style={styles.formContainer}>
+                    <ActionButton buttonColor = "rgb(72,244,66)" title = "Add Flight" onPress = {()=>onButtonPress()} >
+
+                    </ActionButton>
+
                     <Text style={styles.welcome2}>
                         Upcoming Trips
                     </Text>
+
 
                     <Text style={styles.welcome3}>
                         DCA->BNA (details)
@@ -63,9 +72,6 @@ export default class dashboard extends Component{
                         Airport information
                     </Text>
                 </View>
-
-
-
 
 
             </View>
@@ -152,4 +158,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('Dashboard', () => dashboard);
+modules.import = dashboard;

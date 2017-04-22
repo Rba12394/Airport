@@ -30,7 +30,7 @@ const onButtonPress = () => {
     Alert.alert("Button Pressed");
 }
 
-export default class profile1 extends Component{
+class profile1 extends Component{
 
     render() {
         return (
@@ -133,5 +133,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('profile1', () => profile1);
-
+module.export = profile1;

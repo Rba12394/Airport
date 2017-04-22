@@ -21,7 +21,7 @@ const onButtonPress = () => {
 
 
 
-export default class TRVLR extends Component {
+class TRVLR extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
     }
 });
 
-AppRegistry.registerComponent('firsttimeuser', () => firsttimeuser);
+modules.export = firstTimeUser;
